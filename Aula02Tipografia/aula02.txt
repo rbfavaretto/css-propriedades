@@ -1,0 +1,3 @@
+TIPOGRAFIA:
+
+Existem diversas propriedades diferentes para ajustarmos a tipografia do site. Geralmente começam com font ou text.

@@ -1,0 +1,11 @@
+REM:
+
+Unidade relativa ao tamanho da fonte do elemento raiz html. Na maioria dos browsers com configuração padrão 1rem = 16px.
+
+VH E VW:
+
+vh representa o tamanho da altura da tela visível (viewport height) e vw da largura (viewport width). 100vw = 100% da tela.
+
+    * observação:
+      Antes do vh só existia a porcentagem. A porcentagem é problemática para definir o height, pois: height: 100%; significa 100% da altura do pai. A altura do pai sempre é definida pelo tamanho do conteúdo, então basicamente 100% de height não muda em nada.
+      100vh será 100% da altura da tela, independente da quantidade de conteúdo. 
