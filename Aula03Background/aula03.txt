@@ -1,0 +1,13 @@
+BACKGROUND: 
+
+O background pode receber outros valores além de cores sólidas, como imagens e gradientes. A diferença entre img e o background é que a img faz parte do conteúdo, o background apenas do estilo.
+
+GRADIENTE:
+
+A função linear-gradient gera um gradiente linear na propriedade background-image.
+
+    * Direção
+      90deg, 45deg, to left, to right
+
+    * Cores
+      #000 0%, blue 50%, #fff 100%. Cor e local de início.

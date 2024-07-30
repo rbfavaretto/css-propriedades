@@ -1,0 +1,188 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    margin: 0rem;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 3.125rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0.75rem 1.25rem;
+}
+
+a:hover {
+    box-shadow: inset -1px 0 0 #900, inset 0 -1px 0 #900, inset 1px 0 0 #900, inset 0 1px 0 #900;
+}
+
+.cabecalho {
+     
+    display: flex;
+    flex-wrap: wrap;
+    /* responsividade ideal: quebrar a linha e alinhar elementos ao centro */
+    gap: 1.25rem;
+    justify-content: center;
+
+    li {
+        font-size: 0.938rem;
+        text-align: center;   
+        background-color: white;
+        font-weight: 100;
+        padding: 0.75rem 0rem;
+        list-style: none;
+        display: inline-block;
+    }
+}
+
+
+
+.corpo {
+    display: grid;
+    grid-template-columns: 28.125rem 28.125rem;
+    /* ou: grid-template-columns: 1fr 1fr; 
+           max-width 62.5rem; */
+    padding: 1.25rem 1.25rem 3.75rem 1.25rem;
+    justify-content: center;
+    margin-top: 1.25rem;
+    
+}
+
+.parte1 {
+    width: 100%;
+    text-align: right;
+    font-size: 1.25rem;
+    background-color: white;
+    position: relative;
+    
+    #botaoCompra {
+        color: white;
+        background-color: #ee2211;
+        border-radius: 0.25em;
+        padding: 0.625rem 1.25rem;
+        margin: 0.938rem;    
+    }
+    
+    a#botaoCompra:hover{
+        background-color: #900;
+    }
+    
+    h2 {
+        padding: 2.5rem 0.938rem 0rem 0rem;
+        position: relative;
+    }
+    
+    h2::before {
+        position: absolute;
+        content: "";
+        width: 56px;
+        height: 4px;
+        background-color: red;
+        right: -28px;
+        top: 1px;
+    }
+    
+    p {
+        padding: 0.625rem 0.938rem 0.625rem 0.625rem;
+    }
+}
+
+.parte2 img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.parte3 {
+    max-height: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+    place-content: center;
+    padding: 0rem 0.938rem 0rem 0rem;
+    text-align: right;
+    font-size: 2.375rem;
+    color: #c6c6c6;;
+    h2 {
+        grid-row: 2;
+        background-image: url(./img/onda.svg);
+        background-size: 1000px;
+        margin: 0;
+        padding: 50px 0px 50px 50px
+    }
+}
+
+.parte4 {
+    max-width: ;
+    max-height: 400px;
+    background-color: white;
+    margin: 0rem;
+    display: grid;        
+    place-content: center;
+
+        /* padding: 2.813rem 3.125rem 0rem 3.125rem; */
+        h3, p {
+            margin: 0rem;
+        }
+
+        p {
+            /* padding: 0rem 1.25rem 1.563rem 2.5rem; */
+        }
+        
+        ol {
+            list-style: none;
+            padding: 0px;
+        }
+
+        .listaVantagens li:nth-child(odd) {
+            background-color: #f7f7f7;
+        } 
+        
+        
+        #eletrica {
+            display: block;
+            width: 350px;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 15px;
+            p {
+                grid-column: 2;
+            }
+        }
+        
+        #velocimetro {
+            display: grid;
+            padding: 15px;
+            width: 350px;
+            grid-template-columns: auto 1fr;
+            gap: 15px;
+            p {
+                grid-column: 2;
+            }
+        }
+        
+        #rastreador {
+            padding: 15px;
+            width: 350px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 15px;
+            p {
+                grid-column: 2;
+            }
+        }
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 1.25rem 0rem 0.625rem 0rem;
+    font-size: 1.25rem;
+    /* box-sizing: border-box; */
+}
+
