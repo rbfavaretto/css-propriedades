@@ -178,7 +178,20 @@ a:hover {
                 grid-column: 2;
             }
         }
+        
+        #eletrica:hover {
+            border-left: #e21 solid 4px;
+        }
+        
+        #velocimetro:hover {
+            border-left: #e21 solid 4px;
+        }
+        
+        #rastreador:hover {
+            border-left: #e21 solid 4px;
+        }
 }
+
 
 footer {
     text-align: center;
