@@ -1,6 +1,9 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     background: #f7f7f7;
+}
+
+body {
     margin: 0rem;
 }
 
@@ -17,7 +20,7 @@ a {
 }
 
 a:hover {
-    box-shadow: inset -1px 0 0 #900, inset 0 -1px 0 #900, inset 1px 0 0 #900, inset 0 1px 0 #900;
+    box-shadow: inset -0.063rem 0 0 #900, inset 0 -0.063rem 0 #900, inset 0.063rem 0 0 #900, inset 0 0.063rem 0 #900;
 }
 
 .cabecalho {
@@ -69,6 +72,7 @@ a:hover {
     
     a#botaoCompra:hover{
         background-color: #900;
+        transition: 0.3s;
     }
     
     h2 {
@@ -79,11 +83,11 @@ a:hover {
     h2::before {
         position: absolute;
         content: "";
-        width: 56px;
-        height: 4px;
+        width: 3.25rem;
+        height: 0.25rem;
         background-color: red;
-        right: -28px;
-        top: 1px;
+        right: -1.625rem;
+        top: 0.063rem;
     }
     
     p {
@@ -98,10 +102,10 @@ a:hover {
 }
 
 .parte3 {
-    max-height: 400px;
+    max-height: 25rem;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 3px;
+    gap: 0.188rem;
     place-content: center;
     padding: 0rem 0.938rem 0rem 0rem;
     text-align: right;
@@ -110,15 +114,14 @@ a:hover {
     h2 {
         grid-row: 2;
         background-image: url(./img/onda.svg);
-        background-size: 1000px;
+        background-size: 62.5rem;
         margin: 0;
-        padding: 50px 0px 50px 50px
+        padding: 3.125rem 0rem 3.125rem 3.125rem
     }
 }
 
 .parte4 {
-    max-width: ;
-    max-height: 400px;
+    max-height: 25rem;
     background-color: white;
     margin: 0rem;
     display: grid;        
@@ -135,21 +138,20 @@ a:hover {
         
         ol {
             list-style: none;
-            padding: 0px;
+            padding: 0rem;
         }
 
         .listaVantagens li:nth-child(odd) {
             background-color: #f7f7f7;
         } 
         
-        
         #eletrica {
             display: block;
-            width: 350px;
-            padding: 15px;
+            width: 21.875rem;
+            padding: 0.938rem;
             display: grid;
             grid-template-columns: auto 1fr;
-            gap: 15px;
+            gap: 0.938rem;
             p {
                 grid-column: 2;
             }
@@ -157,21 +159,21 @@ a:hover {
         
         #velocimetro {
             display: grid;
-            padding: 15px;
-            width: 350px;
+            padding: 0.938rem;
+            width: 21.875rem;
             grid-template-columns: auto 1fr;
-            gap: 15px;
+            gap: 0.938rem;
             p {
                 grid-column: 2;
             }
         }
         
         #rastreador {
-            padding: 15px;
-            width: 350px;
+            padding: 0.938rem;
+            width: 21.875rem;
             display: grid;
             grid-template-columns: auto 1fr;
-            gap: 15px;
+            gap: 0.938rem;
             p {
                 grid-column: 2;
             }
